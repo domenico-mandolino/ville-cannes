@@ -1,8 +1,29 @@
+.parcs_title {
+    display: flex;
+    font-size: 3em;
+    color: white;
+    text-shadow: black 2px 2px;
+    text-decoration: underline;
+    margin: 2%;
+
+}
+
 main {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin : 1%;
+    margin: 1%;
+    color: white;
+}
+
+.parcs_title {
+    display: inline;
+    font-size: 3em;
+    color: white;
+    text-shadow: black 2px 2px;
+    text-decoration: underline;
+    margin: 2%;
+
 }
 
 .parcs_section1 {
@@ -15,45 +36,58 @@ main {
 .parcs_section2 {
     display: flex;
     flex-direction: row;
+    color: black;
 
 }
 
 .parcs_section2 li {
     list-style-type: none;
+
+}
+
+.parcs_section2 a {
+    color: black;
 }
 
 .west {
     display: flex;
     flex-direction: column;
     border: solid black;
+    border-radius: 25px;
     width: 30%;
     margin: 2%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .center {
     display: flex;
     flex-direction: column;
     border: solid black;
+    border-radius: 25px;
     width: 30%;
     margin: 2%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .east {
     display: flex;
     flex-direction: column;
     border: solid black;
+    border-radius: 25px;
     width: 30%;
     margin: 2%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* ------------footer---------- */
 
 footer {
-    background-color:rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     gap: 1%;
 }
 
-.adresse_footer, .nav_footer {
+.adresse_footer,
+.nav_footer {
     display: inline;
     list-style-type: none;
 }
@@ -75,13 +109,13 @@ footer {
 
 .item2_footer_commun {
     width: 100vw;
-    border-top:solid 1px rgb(136, 136, 136);
-    border-bottom:solid 1px rgb(136, 136, 136);
+    border-top: solid 1px rgb(136, 136, 136);
+    border-bottom: solid 1px rgb(136, 136, 136);
 
 }
 
 
-.nav_footer{
+.nav_footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -91,17 +125,18 @@ footer {
     font-size: 1.5em;
     color: black;
     text-decoration: none;
-    & :hover{
+
+    & :hover {
         color: #2D4FA2;
     }
 }
 
 
-.social{
+.social {
     filter: invert(0);
 }
 
 .copyright {
     color: black;
-    
+
 }
