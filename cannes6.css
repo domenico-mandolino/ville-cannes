@@ -7,12 +7,14 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    color: #333;
+    color:#fff;
 }
 
 
 main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     margin: 20px;
 }
@@ -21,7 +23,7 @@ main {
 .form-container {
     flex: 1;
     justify-content: center;
-    
+
     max-width: 600px;
 }
 
@@ -35,7 +37,7 @@ main {
 /* Styles pour le formulaire */
 .title1, .title2 {
     text-align: center;
-    color: #333;
+    color:#fff;;
 }
 
 /* Ajoutez des styles pour les champs du formulaire si nécessaire */
@@ -50,9 +52,9 @@ main {
 
 /* Styles pour le conteneur de la carte Google Maps */
 .map-container {
-    flex: 2;
-    max-width: 600px;
-    margin-left: 20px; /* Espace entre le formulaire et la carte */
+    flex: 1;
+    max-width: 900px;
+    margin-left: 20px;
 }
 
 .map {
