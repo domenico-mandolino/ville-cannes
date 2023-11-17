@@ -1,0 +1,212 @@
+/* -----------------------debut tronc commun---------------- */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family:Kalam;
+}
+
+@font-face {
+  font-family:Kalam;
+  src: url(Font-Kalam/Kalam-Regular.ttf);
+}
+
+.favicon {
+  filter: invert(1);
+}
+  
+.body_home{
+  display: flex;
+  flex-direction: column; 
+  margin: 0;
+  min-height: 100vh;
+
+}
+
+
+#background_video {
+
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+
+}
+
+
+nav { 
+  gap: 2%;
+  background-color:rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+      
+}
+
+nav ul {
+
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style-type: none;
+  color: #2D4FA2;
+  width: 100vw;
+
+}  
+
+
+nav ul li {
+
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: 900;
+
+}
+
+nav ul li a {
+
+  text-decoration: none;
+  color: #2D4FA2;
+  &:hover {
+      color: rgba(72, 52, 132, 0.719);
+  }
+
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+.dropdown-content {
+
+  background-color:rgba(255, 255, 255, 0.7);
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 26px 0px rgba(39, 20, 103, 0.356);
+  z-index: 1;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.dropdown-content a {
+
+  font-size: 0.8em;
+  float: none;
+  color: hsl(223, 57%, 41%);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #fffefe;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.home{
+  color: rgb(210, 218, 54);
+}
+
+.mySearch{
+  border-radius: 10px;
+  color: #2D4FA2;
+}
+
+
+/* -------------footer-------------- */
+
+.adresse_footer, .nav_footer {
+  display: none;
+  color: #2D4FA2;
+}
+
+.nav_footer li a {
+  color: #2D4FA2;
+}
+
+.content_footer_commun {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+
+.copyright {
+  color: white;
+  text-shadow: 2px 2px 1.5px black;
+  text-align: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.content_footer_social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  filter: invert(1);
+  gap: 3%;
+}
+
+.content_footer_social img:hover {
+  transform: scale(1.5) translateY(-15px)
+}
+
+
+
+
+
+
+
+
+
+/* -----------------------!!!!!!!!!!!!! FIN DU TRONC COMMUN !!!!!!!!!!!---------------- */
+
+
+
+
+
+
+/* ----------------------MAIN------------------------ */
+
+
+.main_home {
+  bottom: 20%;
+  left: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-text {
+  color: white;text-shadow: 2px 2px 1.5px black;
+  font-weight: 300;
+  font-size: 50px;
+  text-align: center;
+  margin: 5%;
+
+}
+

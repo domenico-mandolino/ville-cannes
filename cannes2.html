@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon/favicon_cannes.png" class="favicon">
+    <title>Randonnées</title>
+    <link rel="stylesheet" href="cannes.css">
+    <link rel="stylesheet" href="cannes2.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="nav_content">
+    
+            <img class="logo-cannes" src="Logos/logo-cannes-150px.png" alt="Logo-cannes-ville">
+    
+          <ul>
+            <li class="home"><a href="cannes-accueil.html">Accueil</a></li>
+            <li><a href="cannes1.html">Histoire</a></li>
+            <li>
+              <div class="dropdown">
+    
+                <a class="dropbtn home" href="cannes2.html">Randonnées<i class="carre-down"></i></a>
+    
+                <div class="dropdown-content">
+                  <a href="cannes2.html#rando1">Parc de la Croix-des-Gardes</a>
+                  <a href="cannes2.html#rando2">L'ile Sainte-Marguerite</a>
+                  <a href="cannes2.html#rando3">Le long du Val de Siagne</a>
+                  <a href="cannes2.html#rando4">Le Col de Théoule-sur-mer</a>
+                  <a href="cannes2.html#rando5">Les plages de la croisettes</a>
+                </div>
+              </div>
+            </li>
+    
+            <li><a href="cannes3.html">Plages</a></li>
+            <li><a href="cannes4.html">Parcs publics</a></li>
+            <li><a href="cannes5.html">Musées</a></li>
+            <li><a href="cannes6.html">Contact</a></li>
+            <li><input type="search" class="mySearch" name="q" placeholder="  Rechercher..."></li>
+          </ul>
+    
+        </nav>
+      </header>
+
+    <main>
+        <video id="background_video" autoplay muted loop>
+            <source src="Videos/rando.mp4" type="video/mp4">
+        </video>
+
+        <h1 class="rando_title">Une touche sportive</h1>
+        <section class="sommaire">
+
+            <h2>Sommaire</h2>
+            <ul><!--La création d'id pour chaque div de rando, permet de créer des 
+                ancres qu'on appel avec les liens du sommaire-->
+                <li id=""><a href="#rando1">Tour du Parc de la Croix-des-Gardes</a></li>
+                <li><a href="#rando2">Tour de l'ile Sainte-Marguerite</a></li>
+                <li><a href="#rando3">Escapade le long du Val de Siagne</a></li>
+                <li><a href="#rando4">Le Col de Théoule-sur-mer</a></li>
+                <li><a href="#rando5">Les plages de la croisettes</a></li>
+            </ul>
+        </section>
+
+        <section class="rando">
+            <!--L'utilisation de fieldset/legend permet d'integrer le titre dans la 
+                bordure-->
+            <fieldset id="rando1">
+                <legend class="rando_subtitle">Tour du Parc de la Croix des Croix-des-Gardes</legend>
+                <ul class="rando_details">
+                    <li><b>Durée:</b> environ 1h15</li>
+                    <li><b>Distance:</b> 5km</li>
+                    <li><b>Dénivelé:</b> 96m</li>
+                    <li><b>Difficulté:</b> facile</li>
+                </ul>
+                <p class="rando_description">
+                    Débutons par une randonnée à Cannes permettant d’embrasser d’un regard toute la ville, sa baie et
+                    les îles de Lérins, idéale pour réaliser à quel point le site naturel est exceptionnel !<br><br>
+
+                    Pour ce faire, rendez-vous sur les hauteurs de la ville, à 10 minutes en voiture, à l’entrée du parc
+                    naturel forestier de la Croix-des-Gardes : la façon la plus facile de prendre l’air et de se
+                    dégourdir les jambes au cours d’un très bel itinéraire, offrant plusieurs points de vue comme au
+                    belvédère du Cèdre et à la Croix-des-Gardes elle-même. En bonus, les odeurs de mimosas embaument
+                    l’ensemble du parcours.
+                </p>
+            </fieldset>
+
+            <fieldset id="rando2">
+                <legend class="rando_subtitle">Le tour de l'île Marguerite, au larges de Cannes</legend>
+                <ul class="rando_details">
+                    <li><b>Durée:</b> environ 1h40</li>
+                    <li><b>Distance:</b> 7,2km</li>
+                    <li><b>Dénivelé:</b> 57m</li>
+                    <li><b>Difficulté:</b> facile</li>
+                </ul>
+                <p class="rando_description">
+                    À 15 minutes en bateau du port de Cannes, l’île Sainte-Marguerite est la plus grande des îles de
+                    Lérins. Pour une jolie randonnée autour de Cannes, c’est une destination toute choisie et dépaysante
+                    !<br><br>
+
+                    Dès l’embarcadère, prenez les sentiers côtiers qui vous feront faire le tour de l’île en quelques
+                    heures de marche, dans un magnifique décor méditerranéen.<br><br>
+
+                    Ne prévoyez pas un temps de marche trop court, même si l’itinéraire est facile, car il serait
+                    dommage de ne pas entrecouper votre sortie de quelques baignades dans les petites criques aux eaux
+                    claires : c’est tout l’intérêt de suivre les petits chemins de l’île Sainte-Marguerite !
+                </p>
+            </fieldset>
+
+            <fieldset id="rando3">
+                <legend class="rando_subtitle">Escapade le long du Val de Siagne</legend>
+                <ul class="rando_details">
+                    <li><b>Durée:</b> environ 2h</li>
+                    <li><b>Distance:</b> 7,2km</li>
+                    <li><b>Dénivelé:</b> 265m</li>
+                    <li><b>Difficulté:</b> moyenne</li>
+                </ul>
+                <p class="rando_description">
+                    Une des très belles randonnées à faire autour de Cannes ! Pour cela, il sera nécessaire de rouler un
+                    peu, 45 minutes environ, pour atteindre le point de départ du circuit du Val de Siagne, direction Le
+                    Tignet.<br><br>
+
+                    Sympa même en été, une bonne partie du tracé prend place à l’ombre des chênes centenaires, des pins
+                    et des ormes qui bordent la Siagne : la rivière suit son cours au fond d’un vallon rafraîchi par les
+                    eaux vives, agréable lorsqu’il fait chaud. Il est même possible de se baigner !<br><br>
+
+                    Accessible dans l’ensemble si ce n’est une remontée un peu plus raide sur la fin, l’itinéraire
+                    présente aussi l’avantage de former une boucle.
+                </p>
+            </fieldset>
+
+            <fieldset id="rando4">
+                <legend class="rando_subtitle">Le Col des Théoule-sur-mer et ses panoramas</legend>
+                <ul class="rando_details">
+                    <li><b>Durée:</b> environ 2h</li>
+                    <li><b>Distance:</b> 7,1km</li>
+                    <li><b>Dénivelé:</b> 267m</li>
+                    <li><b>Difficulté:</b> modérée</li>
+                </ul>
+                <p class="rando_description">
+                    Pour cette randonnée autour de Cannes, rendez-vous au sud du golfe de la Napoule, à Théoule-sur-Mer
+                    (30 minutes en voiture). Laissez la voiture derrière vous pour emprunter un très beau sentier menant
+                    à la piste des Saoumes et au mémorial de Notre-Dame d’Afrique, avec en cours de marche plusieurs
+                    superbes panoramas : la Côte d’Azur, Cannes et les îles de Lérins, les Alpes… on en prend plein les
+                    yeux.<br><br>
+
+                    Sans être ni trop long ni trop ardu, mieux vaut prévoir de bonnes chaussures pour marcher
+                    confortablement sur ces sentiers caillouteux, typiquement méditerranéens, accompagnés de délicieuses
+                    senteurs de pinèdes.
+                </p>
+            </fieldset>
+
+            <fieldset id="rando5">
+                <legend class="rando_subtitle">Marche en bord de plage le long de la Croisette</legend>
+                <ul class="rando_details">
+                    <li><b>Durée</b>: environ 2h</li>
+                    <li><b>Distance:</b> 10,1km</li>
+                    <li><b>Dénivelé:</b> 64m</li>
+                    <li><b>Difficulté:</b> facile</li>
+                </ul>
+                <p class="rando_description">
+                    Le Croisette demeure un des lieux les plus emblématiques de la légende cannoise. Cette randonnée à
+                    Cannes qui prend des allures de belle balade de bord de mer ne nécessite ni grosses chaussures ni
+                    bâtons de marche, mais éventuellement un maillot de bain pour faire un saut dans l’eau : les plages
+                    cannoises vous tendent les bras !<br><br>
+
+                    Outre les plages, cet itinéraire est un condensé de plusieurs sites faisant la renommée de Cannes :
+                    le port, le Palais des festivals, les hôtels de luxe et le boulevard de la Croisette… un tracé
+                    urbain donc, idéal pour les balades matinales avant l’affluence de la journée.
+                </p>
+            </fieldset>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="content_footer_commun">
+
+            <div class="item1_footer_commun">
+                
+                <img class="logo-cannes" src="Logos/logo-cannes-150px.png" alt="Logo-cannes-ville">
+
+                <ul class="adresse_footer">
+                    <li><strong>Mairie de Cannes</strong></li>
+                    <li>1 Place Bernard Cornut-Gentille</li>
+                    <li>CS 30140</li>
+                    <li>06414 Cedex Cannes</li>
+                    <li><strong>Standard :</strong> 04 97 06 40 00</li>
+                    <li>Lun - vend : 7h30 - 19h30 | Sam : 7h30 - 13h30</li> 
+                </ul>
+
+            </div>
+
+            <div class="item2_footer_commun">
+ 
+                <ul class="nav_footer">
+                    <li><a href="cannes-accueil.html">Accueil</a></li>
+                    <li><a href="cannes1.html">Histoire</a></li>
+                    <li><a href="cannes2.html" class="home">Randonnées</a></li>
+                    <li><a href="cannes3.html">Plages</a></li>
+                    <li><a href="cannes4.html">Parcs publics</a></li>
+                    <li><a href="cannes5.html">Musées</a></li>
+                    <li><a href="cannes6.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="content_footer_social">
+          
+            <ul class="social">
+                <li><img src="icon/icons8-google-maps-old-50.png" alt="Adresse"></li>
+                <li><img src="icon/icons8-facebook-50.png" alt="facebook"></li>
+                <li><img src="icon/icons8-instagram-50.png" alt="instagram"></li>
+                <li><img src="icon/icons8-twitterx-50(1).png" alt="twitter"></li>
+                <li><img src="icon/icons8-youtube-50.png" alt="youtube"></li>
+                <li><img src="icon/icons8-pinterest-50.png" alt="printerest"></li>
+                <li><img src="icon/icons8-linkedin-50.png" alt="Linkedin"></li>
+            </ul>
+    
+            <p class="copyright">Mairie de Cannes - © Copyright 2023 Ville de Cannes. Tous droits réservés</p>
+    
+        </div>
+      </footer>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+
+
+.slider {
+  width: 100%;
+  height: 10%;
+  background-color: bisque;
+  border-radius: 2rem;
+  margin: 2rem;
+
+}
+
+.slider {
+  overflow: auto;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+
+}
+
+.slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20vw;
+  background-size: cover;
+  background-position: center;
+  animation: slide 10s infinite;
+}
+
+.slider .slide:nth-child(1) {
+  background-image: url('images/museum/Bonnard.jpg');
+  animation-delay: -0;
+}
+
+.slider .slide:nth-child(2) {
+  background-image: url('images/museum/masque_du_fer.jpg');
+  animation-delay: -2s;
+}
+
+.slider .slide:nth-child(3) {
+  background-image: url('images/museum/musee-des-explorations-du-monde.jpg');
+  animation-delay: -4s;
+}
+
+.slider .slide:nth-child(4) {
+  background-image: url('images/museum/musee-masque-fer-fort-royal-cannes.jpg');
+  animation-delay: -6s;
+}
+
+.slider .slide:nth-child(5) {
+  background-image: url('images/museum/underwater.jpg');
+  animation-delay: -8s;
+}
+
+@keyframes slide {
+
+  0%,
+  15%,
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+
+  20% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+
+  95% {
+    transform: translateX(100%);
+    animation-timing-function: ease;
+  }
+}
+
+
+#table_content {
+
+  border-radius: 2rem 2rem 0 0;
+  border: white solid;
+  margin: 2rem;
+}
+
+
+
+td,
+th {
+  border: solid rgb(240, 231, 231);
+  font-weight: 900;
+}
+
+th {
+  border-radius: 2rem 2rem;
+  color: rgb(177, 240, 177);
+  font: 1.5rem sans-serif;
+  font-weight: bold;
+  background-color: rgb(37, 102, 102);
+  margin: 2rem;
+  border-radius: 2rem;
+  padding: 0%;
+  opacity: 85%;
+
+
+
+}
+
+td {
+  color: rgb(37, 102, 102);
+  font-size: medium;
+  background-color: rgb(177, 240, 177);
+  opacity: 70%;
+
+}
+
+
+.button {
+  color: rgb(177, 240, 177);
+  padding: 15px 30px 15px 15px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 900;
+  margin: 0;
+  cursor: pointer;
+  background-color: grey;
+}
+
+
+/* ------------footer---------- */
+
+footer {
+  background-color:rgba(255, 255, 255, 0.7);
+  gap: 1%;
+}
+
+.adresse_footer, .nav_footer {
+  display: inline;
+  list-style-type: none;
+}
+
+.content_footer_commun {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.item1_footer_commun {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1%;
+}
+
+.item2_footer_commun {
+  width: 100vw;
+  border-top:solid 1px rgb(136, 136, 136);
+  border-bottom:solid 1px rgb(136, 136, 136);
+
+}
+
+
+.nav_footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav_footer a {
+  font-size: 1.5em;
+  color: black;
+  text-decoration: none;
+  & :hover{
+      color: #2D4FA2;
+  }
+}
+
+
+.social{
+  filter: invert(0);
+}
+
+.copyright {
+  color: black;
+  
+}
