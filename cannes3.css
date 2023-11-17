@@ -2,7 +2,7 @@
 
 
 .main_plages{
-    background-color: rgba(7, 7, 7, 0.5);
+    /* background-color: rgba(7, 7, 7, 0.5); */
     display: grid; 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
