@@ -18,9 +18,9 @@ main {
 
 }
 
-/* .parcs_section2 li {
-    list-style-type: a voir ce que je choisi comme déco ;
-} */
+.parcs_section2 li {
+    list-style-type: none;
+}
 
 .west {
     display: flex;
