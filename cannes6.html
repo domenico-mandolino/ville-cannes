@@ -2,172 +2,146 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="icon" type="image/x-icon" href="icon/favicon_cannes.png" class="favicon">
-    <link rel="stylesheet" href="cannes.css">
-    <link rel="stylesheet" href="cannes6.css">
-    <style>
-        /* Ajoutez le CSS ici pour éviter les fichiers séparés */
-        main {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px;
-        }
-
-        /* Styles pour le conteneur du formulaire */
-        .form-container {
-            flex: 1;
-            max-width: 600px;
-            margin-right: 20px; /* Espace entre le formulaire et la carte */
-        }
-
-        /* Styles pour le conteneur de la carte Google Maps */
-        .map-container {
-            flex: 1;
-            max-width: 600px;
-        }
-
-        /* Pour rendre la carte responsive */
-        .map {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcs publics</title>
+  <link rel="icon" type="image/x-icon" href="icon/favicon_cannes.png" class="favicon">
+  <link rel="stylesheet" href="cannes.css">
+  <link rel="stylesheet" href="cannes6.css">
 </head>
 
 <body>
-    <header>
-      <nav class="nav_content">
+  <header>
+
+    <nav class="nav_content">
+
+      <img class="logo-cannes" src="Logos/logo-cannes-150px.png" alt="Logo-cannes-ville">
+
+      <ul>
+        <li class="home"><a href="cannes-accueil.html">Accueil</a></li>
+        <li><a href="cannes1.html">Histoire</a></li>
+        <li>
+          <div class="dropdown">
+
+            <a class="dropbtn" href="cannes2.html">Randonnées<i class="carre-down"></i></a>
+
+            <div class="dropdown-content">
+              <a href="cannes2.html#rando1">Parc de la Croix-des-Gardes</a>
+              <a href="cannes2.html#rando2">L'ile Sainte-Marguerite</a>
+              <a href="cannes2.html#rando3">Le long du Val de Siagne</a>
+              <a href="cannes2.html#rando4">Le Col de Théoule-sur-mer</a>
+              <a href="cannes2.html#rando5">Les plages de la croisettes</a>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="cannes3.html">Plages</a></li>
+        <li><a href="cannes4.html">Parcs publics</a></li>
+        <li><a href="cannes5.html">Musées</a></li>
+        <li><a href="cannes6.html">Contact</a></li>
+        <li><input type="search" class="mySearch" name="q" placeholder="  Rechercher..."></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main class="main_contact">
+    <div class="card">
+      <h2><br>Contact Us</h2>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text">
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="form-group">
+            <label>Surname</label>
+            <input type="text">
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text">
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="text">
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="form-group">
+            <label>Message</label>
+            <textarea></textarea>
+          </div>
+        </div>
+    
+        <div class="col">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+    <div class="content_footer_commun">
+
+      <div class="item1_footer_commun">
 
         <img class="logo-cannes" src="Logos/logo-cannes-150px.png" alt="Logo-cannes-ville">
 
-        <ul>
-            <li class="home"><a href="cannes-accueil.html">Accueil</a></li>
-            <li><a href="cannes1.html">Histoire</a></li>
-            <li>
-                <div class="dropdown">
-
-                    <a class="dropbtn" href="cannes2.html">Randonnées<i class="carre-down"></i></a>
-
-                    <div class="dropdown-content">
-                        <a href="cannes2.html#rando1">Parc de la Croix-des-Gardes</a>
-                        <a href="cannes2.html#rando2">L'ile Sainte-Marguerite</a>
-                        <a href="cannes2.html#rando3">Le long du Val de Siagne</a>
-                        <a href="cannes2.html#rando4">Le Col de Théoule-sur-mer</a>
-                        <a href="cannes2.html#rando5">Les plages de la croisettes</a>
-                    </div>
-                </div>
-            </li>
-
-            <li><a href="cannes3.html">Plages</a></li>
-            <li><a href="cannes4.html">Parcs publics</a></li>
-            <li><a href="cannes5.html">Musées</a></li>
-            <li><a href="cannes6.html" class="home">Contact</a></li>
-            <li><input type="search" class="mySearch" name="q" placeholder="  Rechercher..."></li>
+        <ul class="adresse_footer">
+          <li><strong>Mairie de Cannes</strong></li>
+          <li>1 Place Bernard Cornut-Gentille</li>
+          <li>CS 30140</li>
+          <li>06414 Cedex Cannes</li>
+          <li><strong>Standard :</strong> 04 97 06 40 00</li>
+          <li>Lun - vend : 7h30 - 19h30 | Sam : 7h30 - 13h30</li>
         </ul>
 
-    </nav>
-    </header>
+      </div>
 
-    <main>
-        <video id="background_video" autoplay muted loop>
-          <source src="Videos/contact.mp4" type="video/mp4">
-        </video>
+      <div class="item2_footer_commun">
 
-        <div class="form-container">
-            <h1 class="title1">Contactez-nous</h1>
-            <h1 class="title2">Formulaire de contact</h1>
+        <ul class="nav_footer">
+          <li><a href="cannes-accueil.html">Accueil</a></li>
+          <li><a href="cannes1.html">Histoire</a></li>
+          <li><a href="cannes3.html">Plages</a></li>
+          <li><a href="cannes4.html">Parcs publics</a></li>
+          <li><a href="cannes5.html">Musées</a></li>
+          <li><a href="cannes6.html">Contact</a></li>
 
-            <form action="#" method="post">
+        </ul>
 
-                <label for="civilite">Civilité:</label>
-                <select class="gender" id="civilite" name="civilite">
-                    <option value="M">Monsieur</option>
-                    <option value="Mme">Madame</option>
-                </select><br>
-
-                <label for="nom">Nom:</label> <br>
-                <input class="identity" type="text" id="nom" name="nom" required><br>
-
-                <label for="prenom">Prénom:</label> <br>
-                <input class="identity" type="text" id="prenom" name="prenom" required><br>
-
-                <label for="adresse">Adresse:</label> <br>
-                <input class="adress" type="text" id="adresse" name="adresse" required>
-
-                <div>
-                    <label for="commentaires">Commentaires:</label><br>
-                    <textarea id="commentaires" name="commentaires" rows="4" cols="50" required></textarea>
-                </div>
-
-                <div class="checkbox-label">
-                    <input type="checkbox" id="confidentialite" name="confidentialite" required>
-                    <label for="confidentialite">Je valide les politiques de confidentialité de l'entreprise</label>
-                </div>
-
-                <button class="submit" type="submit">Valider</button>
-            </form>
-        </div>
-
-        <div class="map-container">
-            <iframe class="map" src="https://www.google.com/maps/place/H%C3%B4tel+de+Ville+-+Mairie+de+Cannes/@43.5513836,7.0099725,17z/data=!3m1!4b1!4m6!3m5!1s0x12ce8189a7464e2f:0xd0a214e033501ad5!8m2!3d43.5513836!4d7.0125474!16s%2Fg%2F11xlqztz3?hl=fr&entry=ttu" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-    </main>
-
-    <footer>
-      <div class="content_footer_commun">
-
-        <div class="item1_footer_commun">
-
-            <img class="logo-cannes" src="Logos/logo-cannes-150px.png" alt="Logo-cannes-ville">
-
-            <ul class="adresse_footer">
-                <li><strong>Mairie de Cannes</strong></li>
-                <li>1 Place Bernard Cornut-Gentille</li>
-                <li>CS 30140</li>
-                <li>06414 Cedex Cannes</li>
-                <li><strong>Standard :</strong> 04 97 06 40 00</li>
-                <li>Lun - vend : 7h30 - 19h30 | Sam : 7h30 - 13h30</li>
-            </ul>
-
-        </div>
-
-        <div class="item2_footer_commun">
-
-            <ul class="nav_footer">
-                <li><a href="cannes-accueil.html">Accueil</a></li>
-                <li><a href="cannes1.html">Histoire</a></li>
-                <li><a href="cannes2.html">Randonnées</a></li>
-                <li><a href="cannes3.html">Plages</a></li>
-                <li><a href="cannes4.html">Parcs publics</a></li>
-                <li><a href="cannes5.html" class="home">Musées</a></li>
-                <li><a href="cannes6.html">Contact</a></li>
-
-            </ul>
-
-        </div>
+      </div>
 
     </div>
 
 
     <div class="content_footer_social">
 
-        <ul class="social">
-            <li><img src="icon/icons8-google-maps-old-50.png" alt="Adresse"></li>
-            <li><img src="icon/icons8-facebook-50.png" alt="facebook"></li>
-            <li><img src="icon/icons8-instagram-50.png" alt="instagram"></li>
-            <li><img src="icon/icons8-twitterx-50(1).png" alt="twitter"></li>
-            <li><img src="icon/icons8-youtube-50.png" alt="youtube"></li>
-            <li><img src="icon/icons8-pinterest-50.png" alt="printerest"></li>
-            <li><img src="icon/icons8-linkedin-50.png" alt="Linkedin"></li>
-        </ul>
+      <ul class="social">
+        <li><img src="icon/icons8-google-maps-old-50.png" alt="Adresse"></li>
+        <li><img src="icon/icons8-facebook-50.png" alt="facebook"></li>
+        <li><img src="icon/icons8-instagram-50.png" alt="instagram"></li>
+        <li><img src="icon/icons8-twitterx-50(1).png" alt="twitter"></li>
+        <li><img src="icon/icons8-youtube-50.png" alt="youtube"></li>
+        <li><img src="icon/icons8-pinterest-50.png" alt="printerest"></li>
+        <li><img src="icon/icons8-linkedin-50.png" alt="Linkedin"></li>
+      </ul>
 
-        <p class="copyright">Mairie de Cannes - © Copyright 2023 Ville de Cannes. Tous droits réservés</p>
+      <p class="copyright">Mairie de Cannes - © Copyright 2023 Ville de Cannes. Tous droits réservés</p>
 
     </div>
-    </footer>
+  </footer>
 </body>
-
 </html>
